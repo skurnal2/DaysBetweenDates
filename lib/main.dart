@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'DaysBetweenDates',
-      theme: ThemeData(
-        primaryColor: Colors.deepPurpleAccent,
+void main() {
+  runApp(
+    Center(
+      child: Text(
+        'Hello World!',
+        textDirection: TextDirection.ltr,
       ),
-      
-    )
-  }  
+    ),
+  );
 }
