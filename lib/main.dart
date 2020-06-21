@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; 
+import 'package:vibration/vibration.dart';
 
 
 class MyAppBar extends StatelessWidget {
@@ -8,16 +9,17 @@ class MyAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     return Container(
       height: 56.0,
       padding: const EdgeInsets.symmetric(horizontal: 8.0),
       decoration: BoxDecoration(color: Colors.blue[500]),
-      child: Row(
+      child: Row(        
         children: <Widget>[
           IconButton(
             icon: Icon(Icons.menu),
             tooltip: 'Navigation Menu',
-            onPressed: null,
+            onPressed: null,       
           ),
           Expanded(
             child: title,
